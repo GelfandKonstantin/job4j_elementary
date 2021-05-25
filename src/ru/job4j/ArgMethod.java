@@ -1,7 +1,5 @@
 package ru.job4j;
 
-import java.sql.SQLOutput;
-
 public class ArgMethod {
 
     public static void hello(String name, int age) {
