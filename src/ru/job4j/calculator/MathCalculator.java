@@ -15,7 +15,7 @@ public class MathCalculator {
     }
 
     public static double bigSum(double sumAndMultiply, double diffAndDiv) {
-        return sumAndMultiply + diffAndDiv;
+        return sumAndMultiply(sumAndMultiply, diffAndDiv) + diffAndDiv(sumAndMultiply, diffAndDiv);
     }
 
     public static void main(String[] args) {
