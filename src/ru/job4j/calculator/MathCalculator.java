@@ -14,14 +14,14 @@ public class MathCalculator {
                 + div(first, second);
     }
 
-    public static double bigSum(double sum, double multiply, double diff, double div) {
-        return sum + multiply + diff + div;
+    public static double bigSum(double sumAndMultiply, double diffAndDiv) {
+        return sumAndMultiply + diffAndDiv;
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат расчета равен: " + diffAndDiv(10, 20));
-        System.out.println("Результаты расчета равны: " + bigSum(sum, multiply, diff, div);
+        System.out.println("Результаты расчета равны: " + bigSum(sumAndMultiply, diffAndDiv));
     }
 
 }
