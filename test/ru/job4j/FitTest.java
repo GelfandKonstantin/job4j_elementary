@@ -15,7 +15,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenWoman168Then69() {
+    public void whenWoman168Then66() {
         short in = 168;
         double expected = 66;
         double out = Fit.womanWeight(in);
