@@ -14,34 +14,54 @@ public class X2Test {
         int x = 2;
         int expected = 40;
         int rsl = X2.calc(a, b, c, x);
-        a = 1;
-        b = 1;
-        c = 1;
-        x = 1;
+        Assert.assertEquals(expected, rsl);
+    }
+
+    @Test
+    public void whenA1B1C1X1Then3() {
+        int a = 1;
+        int b = 1;
+        int c = 1;
+        int x = 1;
         int expected2 = 3;
         int rsl2 = X2.calc(a, b, c, x);
-        a = 0;
-        b = 1;
-        c = 1;
-        x = 1;
+        Assert.assertEquals(expected2, rsl2);
+    }
+
+    @Test
+    public void whenA0B1C1X1Then2() {
+        int a = 0;
+        int b = 1;
+        int c = 1;
+        int x = 1;
         int expected3 = 2;
         int rsl3 = X2.calc(a, b, c, x);
-        a = 1;
-        b = 1;
-        c = 0;
-        x = 1;
+        Assert.assertEquals(expected3, rsl3);
+    }
+
+    @Test
+    public void whenA1B1C0X1Then2() {
+        int a = 1;
+        int b = 1;
+        int c = 0;
+        int x = 1;
         int expected4 = 2;
         int rsl4 = X2.calc(a, b, c, x);
-        a = 1;
-        b = 1;
-        c = 1;
-        x = 0;
+        Assert.assertEquals(expected4, rsl4);
+    }
+
+    @Test
+    public void whenA1B1C1X0Then1() {
+        int a = 1;
+        int b = 1;
+        int c = 1;
+        int x = 0;
         int expected5 = 1;
         int rsl5 = X2.calc(a, b, c, x);
-        Assert.assertEquals(expected, rsl);
-        Assert.assertEquals(expected2, rsl2);
-        Assert.assertEquals(expected3, rsl3);
-        Assert.assertEquals(expected4, rsl4);
         Assert.assertEquals(expected5, rsl5);
     }
-    }
+
+}
+
+
+
